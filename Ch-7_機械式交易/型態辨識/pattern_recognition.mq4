@@ -2,13 +2,13 @@
 //|                                     Pattern Recognition v1.0     |
 //|          (complete rewrite and name change of pattern alert)     |
 //|                                                                  |
-//|                 Copyright © 2005, Jason Robinson                 |
+//|                 Copyright ?2005, Jason Robinson                 |
 //|                  (jasonrobinsonuk,  jnrtrading)                  |
 //|                   http://www.jnrtrading.co.uk                    |
 //|                                                                  |
 //|      This is still work in progress and needs LOTS of testing    |
 //+------------------------------------------------------------------+
-#property copyright "Copyright © 2005, Jason Robinson (jnrtrading)."
+#property copyright "Copyright ?2005, Jason Robinson (jnrtrading)."
 #property link      "http://www.jnrtrading.co.uk"
 
 #property indicator_chart_window
