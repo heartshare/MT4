@@ -5,7 +5,7 @@ Please Refer https://github.com/sholafalana/MT5-MT4-Telegram-API-Bot/tree/master
 # TODO
 * Search for a bot on telegram with name "@BotFather". We will find it through the search engine. After adding it to the list of contacts,
 we will start communicating with it using the /start command. As a response it will send you a list of all available commands, As shown in the image below
-![pic1](https://user-images.githubusercontent.com/32399318/56162967-1fe7ed00-5fc5-11e9-9555-192c33b34d7f.jpg)
+![pic1](https:https://github.com/azonblue/MT4/blob/main/Ch-9_Telegram%E8%88%87EA%E6%95%B4%E5%90%88/TG-Bot.jpg)
 
 
 * With the /newbot command we begin the registration of a new bot. We need to come up with two names. The first one is a name of a bot that 
