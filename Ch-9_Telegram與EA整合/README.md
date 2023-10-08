@@ -1,6 +1,6 @@
 # MT4-Telegram-API-Bot
 MT4-Telegram-API-Bot is a Bot that communicates with Telegram, and copy all trades from one MT4 terminal to Telegram Groups or channel - 
-it delivers Trade Signal Alert From MT4 Terminal to Telegram, EMail, or the notification terminal
+it delivers Trade Signal Alert From MT4 Terminal to Telegram, EMail, or the notification terminal.
 Please Refer https://github.com/sholafalana/MT5-MT4-Telegram-API-Bot/tree/master
 # TODO
 * Search for a bot on telegram with name "@BotFather". We will find it through the search engine. After adding it to the list of contacts,
