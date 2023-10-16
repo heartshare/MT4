@@ -1,22 +1,22 @@
 //+------------------------------------------------------------------+
 //|                                                         Vita.mq4 |
+//|   This is a sample using Sharpe rtae                             |
 //+------------------------------------------------------------------+
 
 //---- input parameters
 extern double    Lots=0.1;
 extern int       Slip=5;
-extern string    StopSettings="Set stops below";
 extern double    TakeProfit=120;
 extern double    StopLoss=800;
-extern string    PSARsettings="Parabolic sar settings follow";
-extern double    Step    =0.001;   //Parabolic setting
-extern double    Maximum =0.2;     //Parabolic setting
+extern string    PSARsettings="使用Parabolic sar 指標";
+extern double    Step    =0.001;   
+extern double    Maximum =0.2;     
 extern bool      CloseOnOpposite=true;
-extern string    TimeSettings="Set the hour range the EA should trade";
+extern string    TimeSettings="設定 EA 啟動時段";
 extern int       StartHour=0;
 extern int       EndHour=23;
  
-int MagicNumber1=220101,MagicNumber2=220102;
+int MagicNumber1=23001, MagicNumber2=23002;
 
 //+------------------------------------------------------------------+
 //| expert initialization function                                   |
@@ -31,13 +31,14 @@ int init()
   
 int deinit()
   {
-    double   AB=AccountBalance(); 
-    int     tickets[],      nTickets = GetHistoryOrderByCloseTime(tickets);
+    double  AB=AccountBalance(); 
+    int     tickets[], nTickets = GetHistoryOrderByCloseTime(tickets);
   
-    double  balances[];     ArrayResize(balances,  nTickets+1);
+    double  balances[];
+              ArrayResize(balances,  nTickets+1);
     double  prevBal = AB;
     
-    // is counting from end balance down to start balance , hence taking off wins and adding losses
+    // is counting from end balance down to start balance, hence taking off wins and adding losses
     for(int iTicket = 0; iTicket < nTickets; iTicket++)               
     {
      if ( OrderSelect(tickets[iTicket], SELECT_BY_TICKET))                  
